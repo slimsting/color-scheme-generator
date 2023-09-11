@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="main">
+            <form id="form" class="form">
+                <input type="color" id="color-selector" class="color-selector">
+                <select name="options" class="color-mode-selector" id="color-scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button>get color scheme</button>
+            </form>
+            <div class="colors">
+                <!-- style="user-select: all" allows for the text in the div to be selected  when clicked on-->
+                <div id="color-1" style="user-select: all"></div> 
+                <div id="color-2" style="user-select: all"></div>
+                <div id="color-3" style="user-select: all"></div>
+                <div id="color-4" style="user-select: all"></div>
+                <div id="color-5" style="user-select: all"></div>
+            </div>
+        </div>
+        <div class="colors"></div>
+        <script src="index.js"></script>
+    </body>
+</html>
