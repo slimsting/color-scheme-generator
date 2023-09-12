@@ -11,6 +11,10 @@ button,
   border: 1px solid grey;
 }
 
+button:hover {
+  background-color: tan;
+}
+
 .form input,
 .form button,
 .color-mode-selector {
