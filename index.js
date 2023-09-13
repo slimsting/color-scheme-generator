@@ -33,7 +33,7 @@ function renderScheme(colors) {
   for (let color of colors) {
     document.getElementById(
       `color-${count}`
-    ).style.background = `linear-gradient( ${color} 93%, transparent 7%)`;
+    ).style.background = `linear-gradient( ${color} 93%, white 7%)`;
     count++;
     index++;
   }
