@@ -1,5 +1,5 @@
 const colorSelectionForm = document.getElementById("form"); // grab the input form
-const colorsArr = []; // global variable to hold the colors retreived from the API for easy access anywhere in the program
+let colorsArr = []; // global variable to hold the colors retreived from the API for easy access anywhere in the program
 
 colorSelectionForm.addEventListener("submit", (e) => {
   // listen for submit
