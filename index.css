@@ -3,19 +3,23 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #bcf0ce;
+  /* color: #2db35c; */
+}
 
 .main {
-  width: 500px;
+  width: 600px;
   height: 550px;
   margin: 0 auto;
   background-color: #fffdfe;
-  border: 1px solid grey;
+  border: 1px solid #2db35c;
   border-radius: 5px;
 }
 
 .form {
   height: 90px;
-  background-color: #d1d5db;
+  background-color: #6bdc92;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -23,22 +27,25 @@
 
 #color-selector {
   border-radius: 0px;
+  padding: 2px;
 }
 
 .color-mode-selector,
 button {
   padding: 10px 20px;
   cursor: pointer;
-  border: 1px solid grey;
+  border: none;
 }
 
-button:hover {
-  background-color: #a9b1bc;
+button:hover,
+.color-mode-selector:hover {
+  background-color: #bcf0ce;
 }
 
 .form input, /* color selector input*/
 .color-mode-selector,
 .form button {
+  border: 1px solid #2db35c;
   height: 42px;
   border-radius: 6px;
   outline: none;
