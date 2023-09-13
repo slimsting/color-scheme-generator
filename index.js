@@ -1,10 +1,18 @@
-document.getElementById("form").addEventListener("submit", (e) => {
+const colorSelectionForm = document.getElementById("form");
+
+colorSelectionForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const colorValue = document
-    .getElementById("color-selector")
-    .value.substring(1); // subtring(1) used to begin the string from index 1
-  const colorScheme = document.getElementById("color-scheme").value;
-  const link = `https://www.thecolorapi.com/scheme?hex=${colorValue}&mode=${colorScheme}`; //create a link with a query string to retreive the desired color scheme
+
+  const formData = new FormData(colorSelectionForm); //capture form data
+  const inputColor = formData.get("input-color").substring(1); // subtring(1) used to begin the string from index 1
+  const colorMode = formData.get("color-mode");
+
+  // const colorValue = document
+  //   .getElementById("color-selector")
+  //   .value.substring(1);
+  // const colorScheme = document.getElementById("color-scheme").value;
+
+  const link = `https://www.thecolorapi.com/scheme?hex=${inputColor}&mode=${colorMode}`; //create a link with a query string to retreive the desired color scheme
 
   fetch(link)
     .then((response) => response.json()) //convert the results of the GET request into json format
