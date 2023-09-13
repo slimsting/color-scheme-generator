@@ -5,6 +5,7 @@ colorSelectionForm.addEventListener("submit", (e) => {
   // listen for submit
   e.preventDefault(); // prevent default for behaviour
 
+  document.querySelector(".colors-container").style.display = "flex";
   const formData = new FormData(colorSelectionForm); //capture form data
   const inputColor = formData.get("input-color").substring(1); // subtring(1) used to begin the string from index 1 (to remove the initial '#' from the hex value captured)
   const colorMode = formData.get("color-mode");

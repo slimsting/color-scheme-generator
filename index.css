@@ -73,7 +73,7 @@ button:hover,
 }
 
 .colors-container {
-  display: flex;
+  display: none;
   align-items: stretch;
   height: 410px;
 }
