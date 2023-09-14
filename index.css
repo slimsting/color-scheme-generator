@@ -58,7 +58,7 @@ button {
 button:hover,
 .color-mode-selector:hover,
 #color-selector:hover {
-  background-color: #df90c4;
+  background-color: #d888bd;
   color: #000000;
   border: none;
 }
