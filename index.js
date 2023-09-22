@@ -25,7 +25,7 @@ colorSelectionForm.addEventListener("submit", async (e) => {
   renderScheme(colors); // render the color scheme to the DOM
   renderNames(colors); // render the names of the colors to the DOM
   colorsArr = colors;
-});
+  });
 
 //listen for clicks on the DOM to identify which color was clicked
 document.addEventListener("click", function (e) {

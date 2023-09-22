@@ -11,6 +11,7 @@ body {
 
 h1 {
   margin: 0px;
+  font-size: 2.3em;
 }
 
 nav {
@@ -20,6 +21,7 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: #a8ebbf;
+  margin: 1em;
 }
 .main {
   width: 80%;
@@ -43,7 +45,9 @@ nav {
   border: 1px solid #299f51;
   background-color: #bcf0ce;
 }
-
+#get-color-scheme-button {
+  font-weight: bold;
+}
 .color-mode-selector,
 button {
   padding: 0.5em 2em;
