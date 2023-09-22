@@ -79,3 +79,6 @@ function renderNames(colors) {
     index++;
   }
 }
+
+
+// write a function to add two numbers?
